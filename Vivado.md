@@ -2,10 +2,8 @@
 
 ## If installed in /opt/Xilinx and want to add to PATH
 
-1. `sudo stow -t /opt/bin/ -d /opt/Xilinx/Vivado/XXXX.Y/bin/ .`
-   (For Vivado version `XXXX.Y`)
-2. Add `/opt/bin` to PATH in your favorite manner
-   * Can add to path in `/etc/environment`, `/etc/profile`, `~/profile`
+Add `${VIVADO_INSTALL_DIRECTORY}/bin` to PATH in your favorite manner
+ * Can add to path in `/etc/environment`, `/etc/profile`, `~/profile`
 
 ## If hardware not detected
 
