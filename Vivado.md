@@ -9,7 +9,11 @@ Add `${VIVADO_INSTALL_DIRECTORY}/bin` to PATH in your favorite manner
 
 Potential solution: need to install cable drivers for talking to any Xilinx FPGA dev board.
 
-Source the script (in your Vivado install dir): `data/xicom/cable_drivers/lin64/install_script/install_drivers/install_drivers`
+```
+cd ${VIVADO_INSTALL_DIR}/${CURRENT_VIVADO_VERSION}/data/xicom/cable_drivers/lin64/install_script/install_drivers
+sudo source install_drivers
+```
+
 
 [Forum link](https://support.xilinx.com/s/question/0D52E00006iHuoHSAS/hardware-target-not-detected-vivado-20172?language=en_US)
 
