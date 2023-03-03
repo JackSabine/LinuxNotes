@@ -1,12 +1,14 @@
 # GNU Stow
 
 Target (TAR): the directory in which symlinks should be recursively created
-- This is where you want files to _appear_ to be installed
-- Specified with `-t` or `--target=`
 
-Directory (DIR): the directory where symlinks can be recursively found
-- These are the binaries are _actually_ installed
-- Specified with `-d` or `--dir=`
+-   This is where you want files to _appear_ to be installed
+-   Specified with `-t` or `--target=`
+
+Directory (DIR): the directory where the binaries can be recursively found
+
+-   These are the binaries are _actually_ installed
+-   Specified with `-d` or `--dir=`
 
 ## Examples
 
@@ -22,9 +24,6 @@ If this snippet occurs in a script, it uses the CWD of the script's caller (not 
 
 `sudo stow -t /opt/bin/ -d /opt/Xilinx/Vivado/2022.1/bin/ .`
 
-### Remove the symlinks from the previous section 
+### Remove the symlinks from the previous section
 
 `sudo stow -D -t /opt/bin/ -d /opt/Xilinx/Vivado/2022.1/bin/ .`
-
-
-
